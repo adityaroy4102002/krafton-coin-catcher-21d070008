@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krafton Coin Catcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="viewport-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+
+        <div id="ui-layer">
+            <div id="krafton-tag">KRAFTON PRESENTS</div>
+            <h1 class="hud-title">COIN CATCHER</h1>
+
+            <div id="rules-box">
+                <h3>HOW TO PLAY</h3>
+                <ul>
+                    <li>🟡 <b>Collect Coins:</b> +10 Points each</li>
+                    <li>🔴 <b>Avoid Bombs:</b> Instant Game Over</li>
+                    <li>🏆 <b>Win Condition:</b> Reach 50 Points first</li>
+                    <li>☠️ <b>Survival:</b> If opponent hits a bomb, YOU WIN</li>
+                </ul>
+            </div>
+
+            <div id="player-count" class="status-text">Connecting...</div>
+
+            <button id="start-btn" class="primary-btn" onclick="startGame()" disabled>
+                Waiting for Players...
+            </button>
+        </div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
